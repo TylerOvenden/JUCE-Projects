@@ -1,0 +1,1 @@
+C:\Users\vleen\Documents\GitHub\JUCE Projects\SynthBasic\Builds\VisualStudio2019\x64\Debug\Shared Code\SynthBasic.lib
