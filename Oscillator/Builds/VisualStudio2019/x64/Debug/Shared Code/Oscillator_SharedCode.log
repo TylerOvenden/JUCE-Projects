@@ -1,0 +1,11 @@
+﻿  PluginEditor.cpp
+  PluginProcessor.cpp
+C:\Users\vleen\Documents\GitHub\JUCE-Projects\Oscillator\Source\PluginProcessor.cpp(80,55): warning C4100: 'index': unreferenced formal parameter
+C:\Users\vleen\Documents\GitHub\JUCE-Projects\Oscillator\Source\PluginProcessor.cpp(84,66): warning C4100: 'index': unreferenced formal parameter
+C:\Users\vleen\Documents\GitHub\JUCE-Projects\Oscillator\Source\PluginProcessor.cpp(89,82): warning C4100: 'newName': unreferenced formal parameter
+C:\Users\vleen\Documents\GitHub\JUCE-Projects\Oscillator\Source\PluginProcessor.cpp(89,55): warning C4100: 'index': unreferenced formal parameter
+C:\Users\vleen\Documents\GitHub\JUCE-Projects\Oscillator\Source\PluginProcessor.cpp(145,98): warning C4100: 'midiMessages': unreferenced formal parameter
+C:\Users\vleen\Documents\GitHub\JUCE-Projects\Oscillator\Source\PluginProcessor.cpp(184,72): warning C4100: 'destData': unreferenced formal parameter
+C:\Users\vleen\Documents\GitHub\JUCE-Projects\Oscillator\Source\PluginProcessor.cpp(191,75): warning C4100: 'sizeInBytes': unreferenced formal parameter
+C:\Users\vleen\Documents\GitHub\JUCE-Projects\Oscillator\Source\PluginProcessor.cpp(191,65): warning C4100: 'data': unreferenced formal parameter
+  Oscillator_SharedCode.vcxproj -> C:\Users\vleen\Documents\GitHub\JUCE-Projects\Oscillator\Builds\VisualStudio2019\x64\Debug\Shared Code\Oscillator.lib

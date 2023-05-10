@@ -35,9 +35,15 @@ public:
     {
 
     }
+    void prepareToPlay(double sampleRate, int samplesPerBlock) {}
     void SynthVoice::renderNextBlock(juce::AudioBuffer< float >& outputBuffer, int startSample, int numSamples)
     
     {
     }
+private:
+    //this will play a saw wave
+    juce::dsp::Oscillator<float> osc{ [](float x) {   return x / juce::MathConstants<float>::pi;  } };
+    //  juce::dsp::Oscillator<float> osc{ [](float x) { return x < 0.0f ? -1.0f : 1.0f; }, 200 };
+    juce::dsp::Gain<float> gain;
 
 };

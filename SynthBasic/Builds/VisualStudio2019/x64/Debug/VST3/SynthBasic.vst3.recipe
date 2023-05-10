@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\vleen\Documents\GitHub\JUCE Projects\SynthBasic\Builds\VisualStudio2019\x64\Debug\VST3\SynthBasic.vst3</FullPath>
+      <FullPath>C:\Users\vleen\Documents\GitHub\JUCE-Projects\SynthBasic\Builds\VisualStudio2019\x64\Debug\VST3\SynthBasic.vst3</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

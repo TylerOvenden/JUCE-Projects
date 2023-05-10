@@ -149,6 +149,8 @@ void SynthBasicAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, j
     for (auto i = totalNumInputChannels; i < totalNumOutputChannels; ++i)
         buffer.clear (i, 0, buffer.getNumSamples());
 
+  
+
  
     for (int i = 0; i< synth.getNumVoices(); ++i)
     {
@@ -196,5 +198,8 @@ void SynthBasicAudioProcessor::setStateInformation (const void* data, int sizeIn
 // This creates new instances of the plugin..
 juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter()
 {
+    juce::dsp::Oscillator<float> osc{ [](float x) {   return x / juce::MathConstants<float>::pi;  } };
+  
+    juce::dsp::Gain<float> gain;
     return new SynthBasicAudioProcessor();
 }

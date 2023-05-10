@@ -1,1 +1,2 @@
 C:\Users\vleen\Documents\GitHub\JUCE Projects\SynthBasic\Builds\VisualStudio2019\x64\Debug\Standalone Plugin\SynthBasic.exe
+C:\Users\vleen\Documents\GitHub\JUCE-Projects\SynthBasic\Builds\VisualStudio2019\x64\Debug\Standalone Plugin\SynthBasic.exe
