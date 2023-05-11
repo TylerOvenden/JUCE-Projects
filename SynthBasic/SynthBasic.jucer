@@ -6,6 +6,7 @@
   <MAINGROUP id="V5SzeD" name="SynthBasic">
     <GROUP id="{4FBE762E-53F7-3311-BD23-672505D2E5BC}" name="Source">
       <FILE id="MVC6QM" name="SynthVoice.h" compile="0" resource="0" file="Source/SynthVoice.h"/>
+      <FILE id="RX4JTe" name="SynthVoice.cpp" compile="1" resource="0" file="Source/SynthVoice.cpp"/>
       <FILE id="uXgp3l" name="SynthSound.h" compile="0" resource="0" file="Source/SynthSound.h"/>
       <FILE id="DhjxJZ" name="PluginProcessor.cpp" compile="1" resource="0"
             file="Source/PluginProcessor.cpp"/>

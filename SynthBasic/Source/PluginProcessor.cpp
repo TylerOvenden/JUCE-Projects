@@ -5,7 +5,7 @@
 
   ==============================================================================
 */
-
+#pragma once 
 #include "PluginProcessor.h"
 #include "PluginEditor.h"
 
@@ -100,6 +100,17 @@ void SynthBasicAudioProcessor::prepareToPlay (double sampleRate, int samplesPerB
     // Use this method as the place to do any pre-playback
     // initialisation that you need..
     synth.setCurrentPlaybackSampleRate(sampleRate);
+    for (int i = 0; i < synth.getNumVoices(); i++) {
+        //synth.getVoice(i) would = a SynthesisVoice not SynthVoice
+        //need to cast a SynthesiserVoice to SynthVoice
+        if (auto voice = dynamic_cast<SynthVoice*>(synth.getVoice(i))) {
+            voice->prepareToPlay(sampleRate, samplesPerBlock, getTotalNumInputChannels());
+
+        }
+
+
+    }
+
 }
 
 void SynthBasicAudioProcessor::releaseResources()

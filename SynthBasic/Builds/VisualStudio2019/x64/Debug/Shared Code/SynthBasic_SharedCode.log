@@ -1,2 +1,11 @@
 ﻿  SynthVoice.cpp
-C:\Users\vleen\Documents\GitHub\JUCE-Projects\SynthBasic\Builds\VisualStudio2019\SynthVoice.cpp(4,10): fatal error C1083: Cannot open include file: 'SynthVoice.h': No such file or directory
+C:\Users\vleen\Documents\GitHub\JUCE-Projects\SynthBasic\Source\SynthVoice.cpp(21,59): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\vleen\Documents\GitHub\JUCE-Projects\SynthBasic\Source\SynthVoice.cpp(17,99): warning C4100: 'currentPitchWheelPosition': unreferenced formal parameter
+C:\Users\vleen\Documents\GitHub\JUCE-Projects\SynthBasic\Source\SynthVoice.cpp(17,88): warning C4100: 'sound': unreferenced formal parameter
+C:\Users\vleen\Documents\GitHub\JUCE-Projects\SynthBasic\Source\SynthVoice.cpp(17,54): warning C4100: 'velocity': unreferenced formal parameter
+C:\Users\vleen\Documents\GitHub\JUCE-Projects\SynthBasic\Source\SynthVoice.cpp(25,48): warning C4100: 'allowTailOff': unreferenced formal parameter
+C:\Users\vleen\Documents\GitHub\JUCE-Projects\SynthBasic\Source\SynthVoice.cpp(25,33): warning C4100: 'velocity': unreferenced formal parameter
+C:\Users\vleen\Documents\GitHub\JUCE-Projects\SynthBasic\Source\SynthVoice.cpp(29,38): warning C4100: 'newPitchWheelValue': unreferenced formal parameter
+C:\Users\vleen\Documents\GitHub\JUCE-Projects\SynthBasic\Source\SynthVoice.cpp(33,60): warning C4100: 'newControllerValue': unreferenced formal parameter
+C:\Users\vleen\Documents\GitHub\JUCE-Projects\SynthBasic\Source\SynthVoice.cpp(33,38): warning C4100: 'controllerNumber': unreferenced formal parameter
+  SynthBasic_SharedCode.vcxproj -> C:\Users\vleen\Documents\GitHub\JUCE-Projects\SynthBasic\Builds\VisualStudio2019\x64\Debug\Shared Code\SynthBasic.lib

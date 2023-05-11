@@ -18,3 +18,5 @@ Oscillator/Builds/VisualStudio2019/.vs/Oscillator/v16/ipch/AutoPCH/c279f49877a4b
 SynthBasic/Builds/VisualStudio2019/.vs/SynthBasic/v16/ipch/AutoPCH/6c48eef5e5f5c050/PLUGINEDITOR.ipch
 SynthBasic/Builds/VisualStudio2019/x64/Debug/Shared Code/SynthBasic.lib
 SynthBasic/Builds/VisualStudio2019/.vs/SynthBasic/v16/Browse.VC.db-wal
+*.ipch
+Oscillator/Builds/VisualStudio2019/.vs/Oscillator/v16/ipch/AutoPCH/53b0d327380c1dd6/PLUGINEDITOR.ipch
