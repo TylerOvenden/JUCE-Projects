@@ -55,9 +55,10 @@ public:
     //==============================================================================
     void getStateInformation (juce::MemoryBlock& destData) override;
     void setStateInformation (const void* data, int sizeInBytes) override;
-
+    juce::AudioProcessorValueTreeState tree;
     double rawVol;
 private:
+    juce::AudioProcessorValueTreeState::ParameterLayout createParam();
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (GainSliderAudioProcessor)
 };

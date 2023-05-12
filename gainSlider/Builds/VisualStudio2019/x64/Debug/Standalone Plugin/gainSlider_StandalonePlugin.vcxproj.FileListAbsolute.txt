@@ -1,1 +1,2 @@
 C:\Users\vleen\Documents\GitHub\JUCE Projects\gainSlider\Builds\VisualStudio2019\x64\Debug\Standalone Plugin\gainSlider.exe
+C:\Users\vleen\Documents\GitHub\JUCE-Projects\gainSlider\Builds\VisualStudio2019\x64\Debug\Standalone Plugin\gainSlider.exe

@@ -12,14 +12,15 @@
 //==============================================================================
 GainSliderAudioProcessor::GainSliderAudioProcessor()
 #ifndef JucePlugin_PreferredChannelConfigurations
-     : AudioProcessor (BusesProperties()
-                     #if ! JucePlugin_IsMidiEffect
-                      #if ! JucePlugin_IsSynth
-                       .withInput  ("Input",  juce::AudioChannelSet::stereo(), true)
-                      #endif
-                       .withOutput ("Output", juce::AudioChannelSet::stereo(), true)
-                     #endif
-                       )
+    : AudioProcessor(BusesProperties()
+#if ! JucePlugin_IsMidiEffect
+#if ! JucePlugin_IsSynth
+        .withInput("Input", juce::AudioChannelSet::stereo(), true)
+#endif
+        .withOutput("Output", juce::AudioChannelSet::stereo(), true)
+#endif
+        //apvts constructor would go here
+    ), tree(this, nullptr, "Param Names", createParam())
 #endif
 {
 }
@@ -192,4 +193,12 @@ void GainSliderAudioProcessor::setStateInformation (const void* data, int sizeIn
 juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter()
 {
     return new GainSliderAudioProcessor();
+}
+
+juce::AudioProcessorValueTreeState::ParameterLayout  GainSliderAudioProcessor:: createParam() {
+    std::vector<std::unique_ptr<juce::RangedAudioParameter>> params;
+    //add paramters of a gain function
+    params.push_back(std::make_unique<juce::AudioParameterFloat>("GAIN", "Gain", 0.0f, 1.0f, 0.5f));
+      
+    return { params.begin(), params.end() };
 }

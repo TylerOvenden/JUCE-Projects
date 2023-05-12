@@ -1,2 +1,8 @@
-﻿  PluginEditor.cpp
-  gainSlider_SharedCode.vcxproj -> C:\Users\vleen\Documents\GitHub\JUCE Projects\gainSlider\Builds\VisualStudio2019\x64\Debug\Shared Code\gainSlider.lib
+﻿  PluginProcessor.cpp
+C:\Users\vleen\Documents\GitHub\JUCE-Projects\gainSlider\Source\PluginProcessor.cpp(23,12): error C2664: 'juce::AudioProcessorValueTreeState::AudioProcessorValueTreeState(juce::AudioProcessor &,juce::UndoManager *,const juce::Identifier &,juce::AudioProcessorValueTreeState::ParameterLayout)': cannot convert argument 1 from 'GainSliderAudioProcessor *' to 'juce::AudioProcessor &'
+C:\Users\vleen\Downloads\juce-7.0.5-windows\JUCE\modules\juce_audio_processors\utilities\juce_AudioProcessorValueTreeState.h(250,5): message : see declaration of 'juce::AudioProcessorValueTreeState::AudioProcessorValueTreeState'
+C:\Users\vleen\Documents\GitHub\JUCE-Projects\gainSlider\Source\PluginProcessor.cpp(159,69): warning C4244: '=': conversion from 'double' to 'Type', possible loss of data
+          with
+          [
+              Type=float
+          ]
