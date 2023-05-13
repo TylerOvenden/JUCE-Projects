@@ -20,7 +20,7 @@ GainSliderAudioProcessor::GainSliderAudioProcessor()
         .withOutput("Output", juce::AudioChannelSet::stereo(), true)
 #endif
         //apvts constructor would go here
-    ), tree(this, nullptr, "Param Names", createParam())
+    ), tree (*this, nullptr, "Param Names", createParam())
 #endif
 {
 }

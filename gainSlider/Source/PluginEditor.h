@@ -28,8 +28,13 @@ public:
 private:
     // This reference is provided as a quick way for your editor to
     // access the processor object that created it.
+    
+
+    //this doesn't create an audio processor, points to the piece of memory
     GainSliderAudioProcessor& audioProcessor;
 
+
     juce::Slider gainSlider;
+    std::unique_ptr<juce::AudioProcessorValueTreeState::SliderAttachment> gainSliderAttach;
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (GainSliderAudioProcessorEditor)
 };

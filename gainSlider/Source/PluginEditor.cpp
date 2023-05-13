@@ -15,12 +15,18 @@ GainSliderAudioProcessorEditor::GainSliderAudioProcessorEditor (GainSliderAudioP
 {
     // Make sure that before the constructor has finished, you've set the
     // editor's size to whatever you need it to be.
-    setSize (200, 400);
-    gainSlider.setSliderStyle(juce::Slider::SliderStyle::LinearVertical);
+    setSize (200, 300);
+  // gainSlider.setSliderStyle(juce::Slider::SliderStyle::LinearVertical);
+    gainSlider.setSliderStyle(juce::Slider::SliderStyle::RotaryHorizontalVerticalDrag);
+
+
     gainSlider.setTextBoxStyle(juce::Slider::TextBoxBelow, true, 100, 30);
-    gainSlider.setRange(-48.0, 0.0);
-    gainSlider.setValue(-1.0);
-    gainSlider.addListener(this);
+  //  gainSlider.setRange(-48.0, 0.0);
+   // gainSlider.setValue(-1.0);
+  //  gainSlider.addListener(this);
+
+    gainSliderAttach = std::make_unique<juce::AudioProcessorValueTreeState::SliderAttachment>(audioProcessor.tree, "GAIN", gainSlider);
+       
     addAndMakeVisible(gainSlider);
 }
 
@@ -42,7 +48,11 @@ void GainSliderAudioProcessorEditor::resized()
 {
     // This is generally where you'll want to lay out the positions of any
     // subcomponents in your editor..
-    gainSlider.setBounds(getLocalBounds());
+
+
+
+   // gainSlider.setBounds(getLocalBounds());
+    gainSlider.setBounds(getWidth()/2-100, getHeight()/2-500,200,100);
 }
 void GainSliderAudioProcessorEditor::sliderValueChanged(juce::Slider* slider) {
     if (slider == &gainSlider)
